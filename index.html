@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./main.css">
     <title>Shilp</title>
+
+
 </head>
 
 <body>
@@ -66,8 +68,8 @@
     <br>
     <br>
     <br>
-    <center>
 
+    <center>
         <div class="abt-box" id="about">
             <p class="abt2">About Us</p>
             <br>
@@ -144,7 +146,8 @@
                     </a>
                     <br>
                     <br>
-                    <a href="https://www.google.com/maps/place/Shipra's+Shilp+-+Govt.+Approved+Valuer+In+Navi+Mumbai/@19.0696706,72.9955291,17z/data=!4m14!1m6!3m5!1s0x3be7c14bc3fd3ecb:0xe8b45b78ef38de9a!2sShipra's+Shilp+-+Govt.+Approved+Valuer+In+Navi+Mumbai!8m2!3d19.0696706!4d72.9977178!3m6!1s0x3be7c14bc3fd3ecb:0xe8b45b78ef38de9a!8m2!3d19.0696706!4d72.9977178!9m1!1b1">
+                    <a
+                        href="https://www.google.com/maps/place/Shipra's+Shilp+-+Govt.+Approved+Valuer+In+Navi+Mumbai/@19.0696706,72.9955291,17z/data=!4m14!1m6!3m5!1s0x3be7c14bc3fd3ecb:0xe8b45b78ef38de9a!2sShipra's+Shilp+-+Govt.+Approved+Valuer+In+Navi+Mumbai!8m2!3d19.0696706!4d72.9977178!3m6!1s0x3be7c14bc3fd3ecb:0xe8b45b78ef38de9a!8m2!3d19.0696706!4d72.9977178!9m1!1b1">
                         <button class="btn2">
                             READ REVIEWS →
                         </button>
@@ -230,36 +233,87 @@
 
         <br>
 
+    </div>
 
+
+    <div class="testi-container">
+
+
+
+        <div class="myTestis">
+            <center>
+                <div class="abt-box" id="testi">
+                    <p class="abt2">Testimonials</p>
+                    <br>
+                    <p class="testi2">
+                        <i>"</i>
+                    </p>
+                    <p class="testi1">
+                        <i>
+                            Testimonials provide a sense of what it's like to work with you or use your products.<br>
+                            Change the text and add your own."
+
+                        </i>
+                    </p>
+                    <br>
+                    <br>
+                    <p class="abt3">
+                        <i>Alexa Young, CA</i>
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </center>
+        </div>
+
+        <div class="myTestis">
+            <center>
+                <div class="abt-box" id="testi">
+                    <p class="abt2">Testimonial 2</p>
+                    <br>
+                    <p class="testi2">
+                        <i>"</i>
+                    </p>
+                    <p class="testi1">
+                        <i>
+                            Lorem Ipsum Lorem Ipsum of what it's like to work with you or use your products.<br>
+                            Lorem Ipsum Lorem Ipsum and add your own."
+
+                        </i>
+                    </p>
+                    <br>
+                    <br>
+                    <p class="abt3">
+                        <i>Alexa Young, CA</i>
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </center>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a class="prev-testi" onclick="plusTesti(-1)">❮</a>
+        <a class="next-testi" onclick="plusTesti(1)">❯</a>
 
 
     </div>
 
 
-    <center>
-        <div class="abt-box" id="testi">
-            <p class="abt2">Testimonials</p>
-            <br>
-            <p class="testi2">
-                <i>"</i>
-            </p>
-            </p>
-            <p class="testi1">
-                <i>
-                    Testimonials provide a sense of what it's like to work with you or use your products.<br>
-                    Change the text and add your own."
 
-                </i>
-            </p>
-            <br>
-            <br>
-            <p class="abt3">
-                <i>Alexa Young, CA</i>
-            </p>
-            <br>
-            <br>
-        </div>
-    </center>
+
 
     <br>
     <br>
@@ -270,20 +324,21 @@
         <br>
 
         <center>
-            <form class="form-inp">
+            <form class="form-inp" id="myForm">
                 <input type="text" id="fname" name="name" class="inp1" placeholder="Name">
 
                 <input type="text" id="fname" name="email" class="inp2" placeholder="Email">
 
                 <input type="text" id="fname" name="subject" class="inp3" placeholder="Subject">
 
-                <input type="" id="fname" name="subject" class="inp4" placeholder="Type your message">
+                <input type="" id="fname" name="message" class="inp4" placeholder="Type your message">
 
                 <br><br>
 
-                <input type="submit" name="submit" class="sub-btn" placeholder="Submit">
-
             </form>
+
+            <button type="submit" name="submit" class="sub-btn" placeholder="Submit" onclick='SubForm()'>Submit</button>
+
         </center>
         <br><br><br>
     </div>
@@ -445,11 +500,6 @@
 
 
 
-
-
-
-
-
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
@@ -481,6 +531,37 @@
             }
         </script>
 
+        <script>
+            let testiIndex = 1;
+            showTesti(testiIndex);
+
+            function plusTesti(n) {
+                showTesti(testiIndex += n);
+            }
+
+            function currentTesti(n) {
+                showTesti(testiIndex = n);
+            }
+
+            function showTesti(n) {
+                let i;
+                let testis = document.getElementsByClassName("myTestis");
+                let dots = document.getElementsByClassName("demoTesti");
+                let captionText = document.getElementById("captionTesti");
+                if (n > testis.length) { testiIndex = 1 }
+                if (n < 1) { testiIndex = testis.length }
+                for (i = 0; i < testis.length; i++) {
+                    testis[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                testis[testiIndex - 1].style.display = "block";
+                dots[testiIndex - 1].className += " active";
+                captionTestiText.innerHTML = dots[testiIndex - 1].alt;
+            }
+        </script>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -506,6 +587,24 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            function SubForm() {
+                $.ajax({
+                    url: "https://api.apispreadsheets.com/data/OtKUfd1s89U3yb49/",
+                    type: "post",
+                    data: $("#myForm").serializeArray(),
+                    success: function () {
+                        alert("Form Data Submitted :)")
+                    },
+                    error: function () {
+                        alert("There was an error :(")
+                    }
+                });
+            }
+        </script>
 </body>
 
 </html>

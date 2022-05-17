@@ -200,6 +200,10 @@ img {
     position: relative;
 }
 
+.testi-container {
+    position: relative;
+}
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -240,6 +244,37 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
+    background-color: rgba(125, 125, 125, 0.8);
+}
+
+
+
+/* Next & previous buttons */
+.prev-testi,
+.next-testi {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-testi {
+    right: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-testi:hover,
+.next-testi:hover {
     background-color: rgba(125, 125, 125, 0.8);
 }
 
