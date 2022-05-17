@@ -76,7 +76,7 @@
 }
 
 .mul {
-    color: rgb(209, 14, 14);
+    color: rgb(146, 0, 0);
     font-size: 40px;
     font-family: math;
     font-weight: 600;
@@ -99,7 +99,7 @@
 .btn1 {
     font-size: 18px;
     font-weight: 400;
-    background-color: rgb(209, 14, 14);
+    background-color: rgb(146, 0, 0);
     color: white;
     padding: 3.5px 15px 3.5px 15px;
     border-radius: 30px;
