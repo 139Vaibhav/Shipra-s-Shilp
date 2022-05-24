@@ -210,7 +210,8 @@ img {
 }
 
 .mySlides img {
-    width: 75% !important;
+    height: 65vh;
+    width: auto;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -244,7 +245,7 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(125, 125, 125, 0.8);
+    background-color: rgba(144, 0, 0, 0.8);
 }
 
 
@@ -304,12 +305,14 @@ img {
 /* Six columns side by side */
 .column {
     float: left;
-    width: 16.66%;
+    padding-left: 5vh;
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.6;
+    height: 15vh;
+    width: auto;
 }
 
 .active,
@@ -318,7 +321,9 @@ img {
 }
 
 .row {
-    margin: 0 0 0 14%;
+    margin: 0 0 0 0%;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
 .testi1 {
