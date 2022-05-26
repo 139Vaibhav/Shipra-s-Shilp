@@ -200,6 +200,103 @@ img {
     position: relative;
 }
 
+.valuation {
+    background-color: #dbe1e0b8;
+}
+
+.value-head {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.val-cont1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-cont7 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.val-card1 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card2 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card2 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card3 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card4 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card5 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card6 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.val-card7 {
+    width: 18%;
+    padding: 1% 3.5% 0 3.5%;
+}
+
+.hr-val {
+    height: .3rem;
+    color: white;
+    background-color: white;
+}
+
 .testi-container {
     position: relative;
 }
@@ -213,6 +310,7 @@ img {
     height: 65vh;
     width: auto;
 }
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -748,5 +846,119 @@ img {
     .container-team {
         margin: 0 0 0 5%;
     }
+
+    .row {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 54%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .mySlides img {
+        /* width: auto; */
+        width: 90%;
+    }
+
+    .value-head {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .val-cont1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card1 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card2 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card3 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont4 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card4 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont5 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card5 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont6 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card6 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+    .val-cont7 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .val-card7 {
+        width: 41%;
+        padding: 1% 3.5% 0 3.5%;
+    }
+
+
+
+
+
+
+
 
 }
