@@ -290,7 +290,35 @@ img {
 }
 
 .close-2:hover,
-.close-1:focus {
+.close-2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-3:hover,
+.close-3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-4:hover,
+.close-4:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -644,7 +672,7 @@ img {
 }
 
 .iframe {
-    width: 600px;
+    width: 80%;
     height: 450px;
 }
 
